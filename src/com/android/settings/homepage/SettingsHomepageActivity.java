@@ -194,6 +194,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         if (unprovisioned) {
             Log.e(TAG, "Device is not provisioned, exiting Settings");
             finish();
+            return;
         }
 
         mIsEmbeddingActivityEnabled = ActivityEmbeddingUtils.isEmbeddingActivityEnabled(this);
